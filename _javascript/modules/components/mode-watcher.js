@@ -4,6 +4,7 @@
 const $toggleElem = $('.mode-toggle');
 
 export function modeWatcher() {
+  console.log("mode watcher")
   if ($toggleElem.length === 0) {
     return;
   }

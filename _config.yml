@@ -10,7 +10,7 @@ baseurl: ""
 # The language of the webpage › http://www.lingoes.net/en/translator/langcode.htm
 # If it has the same name as one of the files in folder `_data/locales`, the layout language will also be changed,
 # otherwise, the layout language will use the default value of 'en'.
-lang: en
+lang: zh-CN
 
 # Change to your timezone › http://www.timezoneconverter.com/cgi-bin/findzone/findzone
 timezone: Asia/Shanghai
@@ -23,7 +23,7 @@ title: Bikexs # the main title
 tagline: 栢晓笙的github主页 # it will display as the sub-title
 
 description: >- # used by seo meta and the atom feed
-  A minimal, responsive and feature-rich Jekyll theme for technical writing.
+  改造于jekyll-theme-chirpy主题
 
 # fill in the protocol & hostname for your site, e.g., 'https://username.github.io'
 url: "https://bikexs.github.io"
@@ -68,17 +68,17 @@ google_analytics:
 #     light  - Use the light color scheme
 #     dark   - Use the dark color scheme
 #
-theme_mode: [dark]
+# theme_mode: [dark]
 
 # The CDN endpoint for images.
 # Notice that once it is assigned, the CDN url
 # will be added to all image (site avatar & posts' images) paths starting with '/'
 #
 # e.g. 'https://cdn.com'
-img_cdn: "https://chirpy-img.netlify.app"
+img_cdn: "https://bikexs-1257469588.cos.ap-guangzhou.myqcloud.com"
 
 # the avatar on sidebar, support local or CORS resources
-avatar: "/commons/avatar.jpg"
+avatar: "/C6CFB981752099DAB8367DCFF3D91DB7.jpg"
 
 # boolean type, the global switch for TOC in posts.
 toc: true
