@@ -1,0 +1,74 @@
+---
+title: 字典树模板
+author: bikexs
+date: 2023-5-24 7:00:00 +0800
+categories: [java, other]
+tags: [algorithm]
+math: true
+mermaid: true
+---
+
+```java
+import java.util.*;
+
+/**
+* Trie
+*/
+
+class Trie {
+  class TrieNode {
+    int end = 0;
+    TrieNode childs[] = new TrieNode[26];
+  }
+
+  TrieNode root = new TrieNode();
+
+  // 插入
+  public void insert(String word){
+    char arr[] = word.toCharArray();
+    TrieNode node = root;
+    int idx = 0;
+    while(idx < arr.length && node != null){
+      char c = arr[idx];
+      int next = c - 'a';
+      if(node.childs[next] == null){
+        node.childs[next] = new TrieNode();
+      }
+      if(idx == arr.length - 1) {
+        node.childs[next].end ++;
+      }
+      idx++;
+      node = node.childs[next];
+    }
+  }
+
+  // 查找
+  public int query(String word){
+    TrieNode node = root;
+    char arr[] = word.toCharArray();
+    int idx = 0;
+    while(idx < arr.length && node != null){
+      char c = arr[idx];
+      int next = c - 'a';
+      if(node.childs[next] == null){return -1;}
+      node = node.childs[next];
+      idx++;
+    }
+    return node.end;
+  }
+
+}
+
+public class Main {
+  public static void main(String []args) {
+    List<String> list = Arrays.asList("abc", "def", "adc", "abcdef", "abc");
+    Trie trie = new Trie();
+    for(String s : list){
+      trie.insert(s);
+    }
+    System.out.println(trie.query("abc"));
+    System.out.println(trie.query("cde"));
+    System.out.println(trie.query("abcdef"));
+  }
+}
+```
