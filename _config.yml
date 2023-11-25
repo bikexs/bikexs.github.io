@@ -78,7 +78,7 @@ google_analytics:
 img_cdn: "https://bikexs-1257469588.cos.ap-guangzhou.myqcloud.com"
 
 # the avatar on sidebar, support local or CORS resources
-avatar: "/C6CFB981752099DAB8367DCFF3D91DB7.jpg"
+avatar: "https://z1.ax1x.com/2023/11/25/pi0SkE6.jpg"
 
 # boolean type, the global switch for TOC in posts.
 toc: true
