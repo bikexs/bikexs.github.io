@@ -1,5 +1,5 @@
 ---
-title: Mysql专题: Mysql的索引机制
+title: Mysql专题：Mysql的索引机制
 author: bikexs
 date: 2024-3-1 7:00:00 +0800
 categories: [Java]
