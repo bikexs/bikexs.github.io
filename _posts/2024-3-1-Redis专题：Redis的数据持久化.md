@@ -1,3 +1,4 @@
+---
 title: Redis专题：Redis的数据持久化
 author: bikexs
 date: 2024-3-1 7:00:00 +0800
@@ -5,6 +6,7 @@ categories: [Java]
 tags: [Redis]
 math: true
 mermaid: true
+---
 
 ### 一、问题背景
 

@@ -1,3 +1,4 @@
+---
 title: Mysql专题: Mysql的存储机制
 author: bikexs
 date: 2024-3-1 7:00:00 +0800
@@ -5,6 +6,7 @@ categories: [Java]
 tags: [Mysql]
 math: true
 mermaid: true
+---
 
 ### 一、问题背景
 
